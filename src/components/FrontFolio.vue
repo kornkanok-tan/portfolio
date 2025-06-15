@@ -1,22 +1,4 @@
-<script setup>
-// import HelloWorld from "./components/HelloWorld.vue";
-// import DataBinding from "./components/DataBinding.vue";
-// import FrontFolio from "./components/FrontFolio.vue";
-</script>
-
 <template>
-  <!-- <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
-  <DataBinding />
-  <FrontFolio /> -->
-
   <div class="portfolio-container">
     <div class="profile-card">
       <img
@@ -41,67 +23,17 @@
     </div>
     <div class="project-section">
       <h2 class="section-title">Project</h2>
-      <div class="project-card-container">
-        <div class="project-card">
-          <h3 class="project-name">Project Name</h3>
-          <p class="project-summary">Short project summary goes here.</p>
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="project-link"
-          >
-            View Project
-          </a>
-        </div>
-        <div class="project-card">
-          <h3 class="project-name">Project Name</h3>
-          <p class="project-summary">Short project summary goes here.</p>
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="project-link"
-          >
-            View Project
-          </a>
-        </div>
-        <div class="project-card">
-          <h3 class="project-name">Project Name</h3>
-          <p class="project-summary">Short project summary goes here.</p>
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="project-link"
-          >
-            View Project
-          </a>
-        </div>
-        <div class="project-card">
-          <h3 class="project-name">Project Name</h3>
-          <p class="project-summary">Short project summary goes here.</p>
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="project-link"
-          >
-            View Project
-          </a>
-        </div>
-        <div class="project-card">
-          <h3 class="project-name">Project Name</h3>
-          <p class="project-summary">Short project summary goes here.</p>
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="project-link"
-          >
-            View Project
-          </a>
-        </div>
+      <div class="project-card">
+        <h3 class="project-name">Project Name</h3>
+        <p class="project-summary">Short project summary goes here.</p>
+        <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="project-link"
+        >
+          View Project
+        </a>
       </div>
     </div>
     <div class="contact-section">
@@ -116,21 +48,9 @@
   </div>
 </template>
 
-<style scoped>
-/*
- .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-} */
+<script setup></script>
 
+<style scoped>
 .portfolio-container {
   min-height: 100vh;
   background-color: #f8fafc; /* bg-background (ตัวอย่างสีเบื้องต้น) */
@@ -181,6 +101,7 @@
 .project-section,
 .contact-section {
   width: 100%;
+  max-width: 28rem; /* max-w-md */
   margin-bottom: 2.5rem; /* mb-10 (สำหรับ skills & project) */
 }
 
@@ -211,13 +132,6 @@
   border-radius: 0.25rem; /* rounded */
   padding: 0.25rem 0.5rem; /* px-2 py-1 */
   font-size: 0.875rem; /* text-sm */
-}
-
-.project-card-container {
-  display: flex;
-  gap: 1rem; /* gap-4 */
-  justify-content: center;
-  flex-wrap: wrap;
 }
 
 .project-card {
